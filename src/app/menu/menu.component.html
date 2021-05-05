@@ -1,0 +1,13 @@
+<h1>Hráč {{Player}}</h1>
+
+
+<h2 *ngIf="winner">
+    Hráč {{winner}} vyhrál hru
+</h2>
+
+<main>
+    <app-napicu-component *ngFor="let val of box; let i = index" [value] = "val" (click)="Move(i)">
+        
+    </app-napicu-component>
+</main>
+<button (click)="newGame()" id="ResetButton">Nová hra</button>

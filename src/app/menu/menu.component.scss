@@ -1,0 +1,34 @@
+main{
+    display: grid;
+    grid-gap: 14px;
+    grid-template-columns: 200px 200px 200px;
+    justify-content: center;
+    margin-top: 5%;
+}
+h1{
+    color: white;
+    padding: 5px;
+    text-align: center;
+}
+#ResetButton{
+    display: block;
+    background: none;
+    color: white;
+    font-size: 1.2rem;
+    border: 2px solid rgba(34, 197, 34, 0.788);
+    padding: 10px;
+    width: 100%;
+    margin-top: 5%;
+    cursor: pointer;
+    border-radius: 11px;
+    max-width: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    transition-property: box-shadow;
+    transition: .4s;
+
+}
+#ResetButton:hover{
+    transition: .4s;
+    box-shadow: 0 0 10px rgba(34, 197, 34, 0.788), 0 0 13px rgba(34, 197, 34, 0.788), 0 0 15px rgba(34, 197, 34, 0.788);
+}

@@ -1,8 +1,9 @@
 main{
     display: grid;
     grid-gap: 14px;
-    grid-template-columns: 200px 200px 200px;
+    grid-template-columns: 20vh 20vh 20vh;
     justify-content: center;
+    
     margin-top: 5%;
 }
 h1{
@@ -31,4 +32,10 @@ h1{
 #ResetButton:hover{
     transition: .4s;
     box-shadow: 0 0 10px rgba(34, 197, 34, 0.788), 0 0 13px rgba(34, 197, 34, 0.788), 0 0 15px rgba(34, 197, 34, 0.788);
+}
+#winner{
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    margin-top: 10%;
 }

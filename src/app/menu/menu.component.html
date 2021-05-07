@@ -1,11 +1,11 @@
-<h1>Hráč {{Player}}</h1>
+<h1>Hráč <label [ngClass]="{'hrac2' : XNext, 'hrac1' : !XNext}">{{Player}}</label></h1>
 
 
-<h2 *ngIf="winner">
-    Hráč {{winner}} vyhrál hru
+<h2 *ngIf="winner" id="winner">
+    Hráč <label [ngClass]="{'hrac1' : XNext, 'hrac2' : !XNext}">{{winner}}</label> vyhrál hru
 </h2>
 
-<main>
+<main *ngIf="!winner">
     <app-napicu-component *ngFor="let val of box; let i = index" [value] = "val" (click)="Move(i)">
         
     </app-napicu-component>
